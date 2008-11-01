@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = 'atom-test'
-  s.version  = '0.0.2'
+  s.version  = '0.0.3'
   s.date     = '2008-11-01'
   s.summary  = 'Atom Syndication Format test suite for Ruby'
   s.summary  = 'Atom Syndication Format test suite for Ruby'
