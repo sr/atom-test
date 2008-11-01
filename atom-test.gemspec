@@ -10,9 +10,9 @@ Gem::Specification.new do |s|
   s.has_rdoc = false
   s.files = %w[
     README.markdown
-    atom_test.rb
     examples/atom-tools.rb
     examples/atom.rb
+    lib/atom/test.rb
     tests/atom10_namespace.rb
     tests/entry_author_email.rb
     tests/entry_author_map_author.rb
