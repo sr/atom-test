@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/../atom_test'
+require File.dirname(__FILE__) + '/../lib/atom/test'
 
 require 'rubygems'
 require 'atom/feed'

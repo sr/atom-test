@@ -2,6 +2,8 @@ require 'test/unit'
 
 module Atom
   module Test
+    @@tests_directory = File.dirname(__FILE__) + '/../../tests'
+
     def self.create_test_for!(what)
       test_case = Class.new(::Test::Unit::TestCase)
 
@@ -30,9 +32,9 @@ module Atom
       def self.collect_test_files_for(element)
         case element
         when :all
-          Dir[File.dirname(__FILE__) + '/tests/*.rb']
+          Dir[@@tests_directory + '/*.rb']
         when :feed, :entry
-          Dir[File.dirname(__FILE__) + "/tests/#{element}_*.rb"]
+          Dir[@@tests_directory + "/#{element}_*.rb"]
         when :other
           collect_test_files_for(:all) - collect_test_files_for(:feed) - collect_test_files_for(:entry)
         end
