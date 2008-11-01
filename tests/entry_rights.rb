@@ -10,5 +10,5 @@ Description: entry rights
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example Atom', feed.entries[0].rights
+	assert_equal 'Example Atom', feed.entries[0].rights.to_s
 }

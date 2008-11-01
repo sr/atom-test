@@ -12,5 +12,5 @@ Description: entry source logo
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://example.com/logo.jpg', feed.entries[0].source.logo
+	assert_equal 'http://example.com/logo.jpg', feed.entries[0].source.logo.to_s
 }

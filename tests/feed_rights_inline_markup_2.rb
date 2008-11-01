@@ -8,5 +8,5 @@ Description: feed rights inline XHTML with escaped markup
 XML
 
 test = lambda { |feed|
-	assert_equal 'History of the &lt;blink&gt; tag', feed.rights
+	assert_equal 'History of the &lt;blink&gt; tag', feed.rights.to_s
 }

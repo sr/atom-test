@@ -12,5 +12,5 @@ Description: entry source generator
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example generator', feed.entries[0].source.generator.to_s
+	assert_equal 'Example generator', feed.entries[0].source.generator.to_s.to_s
 }

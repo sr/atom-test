@@ -8,5 +8,5 @@ Description: feed subtitle inline XHTML with escaped markup
 XML
 
 test = lambda { |feed|
-	assert_equal 'History of the &lt;blink&gt; tag', feed.subtitle
+	assert_equal 'History of the &lt;blink&gt; tag', feed.subtitle.to_s
 }

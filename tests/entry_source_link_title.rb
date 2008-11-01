@@ -12,5 +12,5 @@ Description: entry source link title
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example title', feed.entries[0].source.links[0].title
+	assert_equal 'Example title', feed.entries[0].source.links[0].title.to_s
 }

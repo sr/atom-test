@@ -11,11 +11,11 @@ XML
 test = lambda { |feed|
 	assert_equal 2, feed.links.size
 
-	assert_equal 'alternate', feed.links[0].rel
-	assert_equal 'application/xhtml+xml', feed.links[0].type
-	assert_equal 'http://www.example.com/', feed.links[0].href
+	assert_equal 'alternate', feed.links[0].rel.to_s
+	assert_equal 'application/xhtml+xml', feed.links[0].type.to_s
+	assert_equal 'http://www.example.com/', feed.links[0].href.to_s
 
-	assert_equal 'service.post', feed.links[1].rel
-	assert_equal 'application/atom+xml', feed.links[1].type
-	assert_equal 'http://www.example.com/post', feed.links[1].href
+	assert_equal 'service.post', feed.links[1].rel.to_s
+	assert_equal 'application/atom+xml', feed.links[1].type.to_s
+	assert_equal 'http://www.example.com/post', feed.links[1].href.to_s
 }

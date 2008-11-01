@@ -5,5 +5,5 @@ xml = <<XML
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example Atom', feed.title
+	assert_equal 'Example Atom', feed.title.to_s
 }

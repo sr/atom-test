@@ -12,5 +12,5 @@ Description: feed author name + email maps to author
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example author (me@example.com)', feed.authors[0].to_s
+	assert_equal 'Example author (me@example.com)', feed.authors[0].to_s.to_s
 }

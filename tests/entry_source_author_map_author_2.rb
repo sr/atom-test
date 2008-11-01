@@ -15,5 +15,5 @@ Description: entry source author name maps to author if no email present
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example author', feed.entries[0].source.authors[0].to_s
+	assert_equal 'Example author', feed.entries[0].source.authors[0].to_s.to_s
 }

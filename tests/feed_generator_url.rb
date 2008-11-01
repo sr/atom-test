@@ -8,5 +8,5 @@ Description: feed generator uri
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://example.com/', feed.generator.uri
+	assert_equal 'http://example.com/', feed.generator.uri.to_s
 }

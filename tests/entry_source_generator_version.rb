@@ -12,5 +12,5 @@ Description: entry source generator version
 XML
 
 test = lambda { |feed|
-	assert_equal '2.65', feed.entries[0].source.generator.version
+	assert_equal '2.65', feed.entries[0].source.generator.version.to_s
 }

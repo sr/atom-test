@@ -10,5 +10,5 @@ Description: entry content with explicit type='text'
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example Atom', feed.entries[0].content.value
+	assert_equal 'Example Atom', feed.entries[0].content.value.to_s
 }

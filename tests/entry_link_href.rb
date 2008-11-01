@@ -10,5 +10,5 @@ Description: entry link href
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://www.example.com/', feed.entries[0].links[0].href
+	assert_equal 'http://www.example.com/', feed.entries[0].links[0].href.to_s
 }

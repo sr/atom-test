@@ -16,5 +16,5 @@ Description: entry source author email
 XML
 
 test = lambda { |feed|
-	assert_equal 'me@example.com', feed.entries[0].source.authors.first.email
+	assert_equal 'me@example.com', feed.entries[0].source.authors.first.email.to_s
 }

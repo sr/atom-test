@@ -8,5 +8,5 @@ Description: feed link rel='related'
 XML
 
 test = lambda { |feed|
-	assert_equal 'related', feed.links[0].rel
+	assert_equal 'related', feed.links[0].rel.to_s
 }

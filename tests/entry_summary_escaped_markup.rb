@@ -10,5 +10,5 @@ Description: entry summary escaped HTML
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example <b>Atom</b>', feed.entries[0].summary
+	assert_equal 'Example <b>Atom</b>', feed.entries[0].summary.to_s
 }

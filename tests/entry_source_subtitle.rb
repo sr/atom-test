@@ -12,5 +12,5 @@ Description: entry source subtitle
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example Atom', feed.entries[0].source.subtitle
+	assert_equal 'Example Atom', feed.entries[0].source.subtitle.to_s
 }

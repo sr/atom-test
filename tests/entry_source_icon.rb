@@ -12,5 +12,5 @@ Description: entry source icon
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://example.com/favicon.ico', feed.entries[0].source.icon
+	assert_equal 'http://example.com/favicon.ico', feed.entries[0].source.icon.to_s
 }

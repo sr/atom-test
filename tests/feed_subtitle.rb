@@ -8,5 +8,5 @@ Description: feed subtitle
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example Atom', feed.subtitle
+	assert_equal 'Example Atom', feed.subtitle.to_s
 }

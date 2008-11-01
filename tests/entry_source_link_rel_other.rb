@@ -12,5 +12,5 @@ Description: entry source link rel as URI
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://feedparser.org/rel/test', feed.entries[0].source.links[0].rel
+	assert_equal 'http://feedparser.org/rel/test', feed.entries[0].source.links[0].rel.to_s
 }

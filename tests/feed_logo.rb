@@ -8,5 +8,5 @@ Description: feed logo
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://example.com/logo.jpg', feed.logo
+	assert_equal 'http://example.com/logo.jpg', feed.logo.to_s
 }

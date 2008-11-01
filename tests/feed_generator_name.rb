@@ -8,5 +8,5 @@ Description: feed generator name
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example generator', feed.generator.name
+	assert_equal 'Example generator', feed.generator.name.to_s
 }

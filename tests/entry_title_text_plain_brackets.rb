@@ -10,5 +10,5 @@ Description: entry title with explicit type='text' contains brackets that are no
 XML
 
 test = lambda { |feed|
-	assert_equal 'History of the <blink> tag', feed.entries[0].title
+	assert_equal 'History of the <blink> tag', feed.entries[0].title.to_s
 }

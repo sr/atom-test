@@ -10,5 +10,5 @@ Description: entry link type
 XML
 
 test = lambda { |feed|
-	assert_equal 'text/html', feed.entries[0].links[0].type
+	assert_equal 'text/html', feed.entries[0].links[0].type.to_s
 }

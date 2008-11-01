@@ -8,5 +8,5 @@ Description: feed link hreflang
 XML
 
 test = lambda { |feed|
-	assert_equal 'en', feed.links[0].hreflang
+	assert_equal 'en', feed.links[0].hreflang.to_s
 }

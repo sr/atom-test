@@ -12,5 +12,5 @@ Description: entry source title inline XHTML with escaped markup
 XML
 
 test = lambda { |feed|
-	assert_equal 'History of the &lt;blink&gt; tag', feed.entries[0].source.title
+	assert_equal 'History of the &lt;blink&gt; tag', feed.entries[0].source.title.to_s
 }

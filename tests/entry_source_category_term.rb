@@ -12,5 +12,5 @@ Description: entry source category term
 XML
 
 test = lambda { |feed|
-	assert_equal 'atom10', feed.entries[0].source.categories[0].term
+	assert_equal 'atom10', feed.entries[0].source.categories[0].term.to_s
 }

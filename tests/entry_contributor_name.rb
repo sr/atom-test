@@ -14,5 +14,5 @@ Description: entry contributor name
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example contributor', feed.entries[0].contributors[0].name
+	assert_equal 'Example contributor', feed.entries[0].contributors[0].name.to_s
 }

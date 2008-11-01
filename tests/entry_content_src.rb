@@ -10,5 +10,5 @@ Description: entry content src
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://example.com/movie.mp4', feed.entries[0].content.src
+	assert_equal 'http://example.com/movie.mp4', feed.entries[0].content.src.to_s
 }

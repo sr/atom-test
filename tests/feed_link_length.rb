@@ -8,5 +8,5 @@ Description: feed link length
 XML
 
 test = lambda { |feed|
-	assert_equal '42301', feed.links[0].length
+	assert_equal '42301', feed.links[0].length.to_s
 }

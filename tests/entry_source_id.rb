@@ -12,5 +12,5 @@ Description: entry source id
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://example.com/', feed.entries[0].source.id
+	assert_equal 'http://example.com/', feed.entries[0].source.id.to_s
 }

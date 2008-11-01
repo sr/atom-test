@@ -10,5 +10,5 @@ Description: entry summary inline XHTML with escaped markup
 XML
 
 test = lambda { |feed|
-	assert_equal 'History of the &lt;blink&gt; tag', feed.entries[0].summary
+	assert_equal 'History of the &lt;blink&gt; tag', feed.entries[0].summary.to_s
 }

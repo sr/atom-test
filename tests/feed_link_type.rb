@@ -8,5 +8,5 @@ Description: feed link type
 XML
 
 test = lambda { |feed|
-	assert_equal 'text/html', feed.links[0].type
+	assert_equal 'text/html', feed.links[0].type.to_s
 }

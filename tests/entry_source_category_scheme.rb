@@ -12,5 +12,5 @@ Description: entry source category scheme
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://feedparser.org/tests/', feed.entries[0].source.categories[0].scheme
+	assert_equal 'http://feedparser.org/tests/', feed.entries[0].source.categories[0].scheme.to_s
 }

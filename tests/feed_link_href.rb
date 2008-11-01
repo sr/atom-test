@@ -8,5 +8,5 @@ Description: feed link href
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://www.example.com/', feed.links[0].href
+	assert_equal 'http://www.example.com/', feed.links[0].href.to_s
 }

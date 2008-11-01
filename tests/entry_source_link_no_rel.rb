@@ -12,5 +12,5 @@ Description: entry source link rel defaults to 'alternate'
 XML
 
 test = lambda { |feed|
-	assert_equal 'alternate', feed.entries[0].source.links[0].rel
+	assert_equal 'alternate', feed.entries[0].source.links[0].rel.to_s
 }

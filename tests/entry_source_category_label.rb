@@ -12,5 +12,5 @@ Description: entry source category label
 XML
 
 test = lambda { |feed|
-	assert_equal 'Atom 1.0 tests', feed.entries[0].source.categories[0].label
+	assert_equal 'Atom 1.0 tests', feed.entries[0].source.categories[0].label.to_s
 }

@@ -8,5 +8,5 @@ Description: feed rights escaped HTML
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example <b>Atom</b>', feed.rights
+	assert_equal 'Example <b>Atom</b>', feed.rights.to_s
 }

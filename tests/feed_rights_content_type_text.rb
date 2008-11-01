@@ -8,5 +8,5 @@ Description: feed rights type='text'
 XML
 
 test = lambda { |feed|
-	assert_equal 'text/plain', feed.rights.mime_type
+	assert_equal 'text/plain', feed.rights.mime_type.to_s
 }

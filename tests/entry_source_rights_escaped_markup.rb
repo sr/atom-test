@@ -12,5 +12,5 @@ Description: entry source rights escaped HTML
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example <b>Atom</b>', feed.entries[0].source.rights
+	assert_equal 'Example <b>Atom</b>', feed.entries[0].source.rights.to_s
 }

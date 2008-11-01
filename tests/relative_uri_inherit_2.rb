@@ -8,5 +8,5 @@ Description: feed title contains relative URI resolved relative to xml:base over
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example <a href="http://example.com/test/test.html">test</a>', feed.title_detail.value
+	assert_equal 'Example <a href="http://example.com/test/test.html">test</a>', feed.title_detail.value.to_s
 }

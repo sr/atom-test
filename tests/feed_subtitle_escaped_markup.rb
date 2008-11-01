@@ -8,5 +8,5 @@ Description: feed subtitle escaped HTML
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example <b>Atom</b>', feed.subtitle
+	assert_equal 'Example <b>Atom</b>', feed.subtitle.to_s
 }

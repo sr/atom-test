@@ -8,5 +8,5 @@ Description: feed link rel defaults to 'alternate'
 XML
 
 test = lambda { |feed|
-	assert_equal 'alternate', feed.links[0].rel
+	assert_equal 'alternate', feed.links[0].rel.to_s
 }

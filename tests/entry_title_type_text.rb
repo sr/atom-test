@@ -10,5 +10,5 @@ Description: entry title type='text'
 XML
 
 test = lambda { |feed|
-	assert_equal 'text/plain', feed.entries[0].title.mime_type
+	assert_equal 'text/plain', feed.entries[0].title.mime_type.to_s
 }

@@ -12,5 +12,5 @@ Description: entry source title escaped HTML
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example <b>Atom</b>', feed.entries[0].source.title
+	assert_equal 'Example <b>Atom</b>', feed.entries[0].source.title.to_s
 }

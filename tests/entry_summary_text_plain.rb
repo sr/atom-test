@@ -10,5 +10,5 @@ Description: entry summary with explicit type='text'
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example Atom', feed.entries[0].summary
+	assert_equal 'Example Atom', feed.entries[0].summary.to_s
 }

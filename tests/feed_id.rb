@@ -8,5 +8,5 @@ Description: feed id
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://example.com/', feed.id
+	assert_equal 'http://example.com/', feed.id.to_s
 }

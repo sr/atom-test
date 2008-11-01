@@ -16,5 +16,5 @@ Description: entry source author name
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example author', feed.entries[0].source.authors.first.name
+	assert_equal 'Example author', feed.entries[0].source.authors.first.name.to_s
 }

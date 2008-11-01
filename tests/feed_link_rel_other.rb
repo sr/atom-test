@@ -8,5 +8,5 @@ Description: feed link rel as URI
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://feedparser.org/rel/test', feed.links[0].rel
+	assert_equal 'http://feedparser.org/rel/test', feed.links[0].rel.to_s
 }

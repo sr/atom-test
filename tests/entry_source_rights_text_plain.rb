@@ -12,5 +12,5 @@ Description: entry source rights with explicit type='text'
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example Atom', feed.entries[0].source.rights
+	assert_equal 'Example Atom', feed.entries[0].source.rights.to_s
 }

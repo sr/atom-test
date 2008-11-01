@@ -8,5 +8,5 @@ Description: feed rights with explicit type='text'
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example Atom', feed.rights
+	assert_equal 'Example Atom', feed.rights.to_s
 }

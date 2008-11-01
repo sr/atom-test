@@ -12,5 +12,5 @@ Description: entry content base64-encoded
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example <b>Atom</b>', feed.entries[0].content.value
+	assert_equal 'Example <b>Atom</b>', feed.entries[0].content.value.to_s
 }

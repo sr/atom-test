@@ -12,5 +12,5 @@ Description: entry source generator uri
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://example.com/', feed.entries[0].source.generator.uri
+	assert_equal 'http://example.com/', feed.entries[0].source.generator.uri.to_s
 }

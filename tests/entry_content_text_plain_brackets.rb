@@ -10,5 +10,5 @@ Description: entry content with explicit type='text' contains brackets that are 
 XML
 
 test = lambda { |feed|
-	assert_equal 'History of the <blink> tag', feed.entries[0].content.value
+	assert_equal 'History of the <blink> tag', feed.entries[0].content.value.to_s
 }

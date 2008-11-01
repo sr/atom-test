@@ -10,5 +10,5 @@ Description: entry link rel='via'
 XML
 
 test = lambda { |feed|
-	assert_equal 'via', feed.entries[0].links[0].rel
+	assert_equal 'via', feed.entries[0].links[0].rel.to_s
 }

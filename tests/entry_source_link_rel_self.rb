@@ -12,5 +12,5 @@ Description: entry source link rel='self'
 XML
 
 test = lambda { |feed|
-	assert_equal 'self', feed.entries[0].source.links[0].rel
+	assert_equal 'self', feed.entries[0].source.links[0].rel.to_s
 }

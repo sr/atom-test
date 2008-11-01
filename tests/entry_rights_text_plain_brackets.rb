@@ -10,5 +10,5 @@ Description: entry rights with explicit type='text' contains brackets that are n
 XML
 
 test = lambda { |feed|
-	assert_equal 'History of the <blink> tag', feed.entries[0].rights
+	assert_equal 'History of the <blink> tag', feed.entries[0].rights.to_s
 }

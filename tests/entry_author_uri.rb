@@ -15,5 +15,5 @@ Description: entry author uri
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://example.com/', feed.entries[0].authors.first.uri
+	assert_equal 'http://example.com/', feed.entries[0].authors.first.uri.to_s
 }

@@ -8,5 +8,5 @@ Description: feed subtitle content type defaults to 'text/plain'
 XML
 
 test = lambda { |feed|
-	assert_equal 'text/plain', feed.subtitle.mime_type
+	assert_equal 'text/plain', feed.subtitle.mime_type.to_s
 }

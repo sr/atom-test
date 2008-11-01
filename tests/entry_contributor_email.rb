@@ -14,5 +14,5 @@ Description: entry contributor email
 XML
 
 test = lambda { |feed|
-	assert_equal 'me@example.com', feed.entries[0].contributors[0].email
+	assert_equal 'me@example.com', feed.entries[0].contributors[0].email.to_s
 }

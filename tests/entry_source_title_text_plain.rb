@@ -12,5 +12,5 @@ Description: entry source title with explicit type='text'
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example Atom', feed.entries[0].source.title
+	assert_equal 'Example Atom', feed.entries[0].source.title.to_s
 }

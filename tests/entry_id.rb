@@ -10,5 +10,5 @@ Description: entry id
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://example.com/', feed.entries[0].id
+	assert_equal 'http://example.com/', feed.entries[0].id.to_s
 }

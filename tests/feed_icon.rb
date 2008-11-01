@@ -8,5 +8,5 @@ Description: feed icon
 XML
 
 test = lambda { |feed|
-	assert_equal 'http://example.com/favicon.ico', feed.icon
+	assert_equal 'http://example.com/favicon.ico', feed.icon.to_s
 }

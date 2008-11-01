@@ -8,5 +8,5 @@ Description: feed link title
 XML
 
 test = lambda { |feed|
-	assert_equal 'Example title', feed.links[0].title
+	assert_equal 'Example title', feed.links[0].title.to_s
 }
